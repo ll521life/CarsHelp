@@ -7,16 +7,21 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    RootTabBarViewController *rootTabBar = [[RootTabBarViewController alloc] initWithNibName:@"RootTabBarViewController" bundle:nil];
+    _window.rootViewController = rootTabBar;
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
     return YES;
 }
 
