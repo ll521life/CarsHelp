@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Information : NSObject
+@interface Information : NSObject<NSSecureCoding>
 @property (nonatomic, copy) NSString *resourceLoc;
 @property (nonatomic, copy) NSString *excerpt;
 @property (nonatomic, copy) NSString *title;
@@ -16,7 +16,7 @@
 @property (nonatomic, copy) NSString *origin;
 @property (nonatomic, copy) NSString *author;
 @property (nonatomic, copy) NSString *readCount;
-@property (nonatomic, copy) NSString *CommuntCount;
+@property (nonatomic, copy) NSString *communtCount;
 @property (nonatomic, copy) NSString *style;
 @property (nonatomic, copy) NSArray *picUrlList;
 @property (nonatomic, copy) NSString *articleType;

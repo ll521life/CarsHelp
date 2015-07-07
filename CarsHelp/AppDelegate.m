@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootTabBarViewController.h"
+#import "PPRevealSideViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,11 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window = [UIWindow new];
+    [self.window makeKeyAndVisible];
+    self.window.frame = [[UIScreen mainScreen] bounds];
     RootTabBarViewController *rootTabBar = [[RootTabBarViewController alloc] initWithNibName:@"RootTabBarViewController" bundle:nil];
-    _window.rootViewController = rootTabBar;
+     PPRevealSideViewController *slideViewController = [[PPRevealSideViewController alloc]initWithRootViewController:rootTabBar];
+    //slideViewController.view.backgroundColor = [UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    _window.rootViewController = slideViewController;
+    [UMSocialData setAppKey:@"5582766867e58e17de000e36"];
     _window.backgroundColor = [UIColor whiteColor];
-    [_window makeKeyAndVisible];
+
     return YES;
 }
 

@@ -6,14 +6,61 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="InfomationTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="334" height="110"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="InfomationTableViewCell">
+            <rect key="frame" x="0.0" y="1" width="378" height="122"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-zA-hHm">
+                        <rect key="frame" x="8" y="13" width="110" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="CqX-Gh-m7J"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWo-FE-hV3">
+                        <rect key="frame" x="132" y="13" width="212" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCF-8H-GEn">
+                        <rect key="frame" x="131" y="68" width="115" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiQ-Af-9b4">
+                        <rect key="frame" x="271" y="73" width="62" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rzo-zA-hHm" firstAttribute="leading" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="1bA-Gq-5xn"/>
+                    <constraint firstItem="Rzo-zA-hHm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="6qN-4X-OKW"/>
+                    <constraint firstAttribute="bottom" secondItem="Rzo-zA-hHm" secondAttribute="bottom" constant="5" id="Bwg-bv-dTH"/>
+                    <constraint firstAttribute="trailing" secondItem="GiQ-Af-9b4" secondAttribute="trailing" constant="20" id="IVf-To-sSj"/>
+                    <constraint firstAttribute="bottom" secondItem="hCF-8H-GEn" secondAttribute="bottom" constant="5" id="MhW-Ck-hgL"/>
+                    <constraint firstItem="hCF-8H-GEn" firstAttribute="top" secondItem="WWo-FE-hV3" secondAttribute="bottom" constant="10" id="YUv-QI-MNk"/>
+                    <constraint firstAttribute="trailing" secondItem="WWo-FE-hV3" secondAttribute="trailing" constant="5" id="a5i-ee-I6j"/>
+                    <constraint firstItem="WWo-FE-hV3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bDM-0b-tmy"/>
+                    <constraint firstItem="hCF-8H-GEn" firstAttribute="leading" secondItem="Rzo-zA-hHm" secondAttribute="trailing" constant="5" id="bZK-Sx-36j"/>
+                    <constraint firstItem="WWo-FE-hV3" firstAttribute="leading" secondItem="Rzo-zA-hHm" secondAttribute="trailing" constant="5" id="cxi-XC-kqV"/>
+                    <constraint firstItem="Rzo-zA-hHm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gDM-So-bAX"/>
+                    <constraint firstAttribute="bottom" secondItem="GiQ-Af-9b4" secondAttribute="bottom" constant="5" id="jsD-gm-u3v"/>
+                    <constraint firstItem="GiQ-Af-9b4" firstAttribute="leading" secondItem="hCF-8H-GEn" secondAttribute="trailing" constant="20" id="oGQ-p9-LGw"/>
+                    <constraint firstItem="Rzo-zA-hHm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="pNF-58-t2X"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="234" y="255"/>
+            <connections>
+                <outlet property="commmuntCount" destination="GiQ-Af-9b4" id="T4D-tI-SRc"/>
+                <outlet property="iconImageView" destination="Rzo-zA-hHm" id="Ir4-4x-TbN"/>
+                <outlet property="origin" destination="hCF-8H-GEn" id="a9z-Q1-EqY"/>
+                <outlet property="title" destination="WWo-FE-hV3" id="Lws-4D-CXP"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="221"/>
         </tableViewCell>
     </objects>
 </document>

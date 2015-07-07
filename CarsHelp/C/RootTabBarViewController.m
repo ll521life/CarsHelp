@@ -46,7 +46,8 @@
     myNac.tabBarItem.selectedImage = [UIImage imageNamed:@"wode2"];
     
     self.viewControllers = @[inforNac,commNac,carNac,myNac];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbar"] forBarMetrics:UIBarMetricsCompact];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:34/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabBarBg"]];
     
 }

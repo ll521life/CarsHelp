@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Information;
 @interface InfomationTableViewCell : UITableViewCell
-
+- (void)refreshCell:(Information *)info;
 @end

@@ -22,7 +22,7 @@
 
 #import "AFAppDotNetAPIClient.h"
 
-static NSString * const AFAppDotNetAPIBaseURLString = @"http://api.qctt.cn/qctt/2/index.php/";
+static NSString * const AFAppDotNetAPIBaseURLString = @"";
 
 //static NSString * const AFAppDotNetAPIBaseURLString = @"http://api.d1cm.com/appnews/";
 
